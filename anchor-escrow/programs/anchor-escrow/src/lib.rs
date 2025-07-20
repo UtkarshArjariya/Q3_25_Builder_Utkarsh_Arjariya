@@ -1,5 +1,6 @@
 #![allow(unexpected_cfgs)]
 #![allow(deprecated)]
+#![allow(unused)]
 
 pub mod constants;
 pub mod error;

@@ -1,3 +1,4 @@
+#![allow(unused)]
 use anchor_lang::{accounts::program, prelude::*};
 
 use anchor_spl::{
