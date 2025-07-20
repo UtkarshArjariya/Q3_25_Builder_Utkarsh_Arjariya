@@ -1,3 +1,6 @@
+#![allow(unexpected_cfgs)]
+#![allow(deprecated)]
+
 pub mod constants;
 pub mod error;
 pub mod instructions;
@@ -14,8 +17,4 @@ declare_id!("AKg34g8K4mouyyB1Fx53wnJoBTiErHmtsstztXfmCWZ3");
 #[program]
 pub mod anchor_escrow {
     use super::*;
-
-    pub fn initialize(ctx: Context<Initialize>) -> Result<()> {
-        initialize::handler(ctx)
-    }
 }
