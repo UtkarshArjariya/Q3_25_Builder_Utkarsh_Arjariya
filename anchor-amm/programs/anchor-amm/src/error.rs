@@ -57,6 +57,9 @@ pub enum AmmError {
 
     #[msg("Zero balance.")]
     ZeroBalance,
+
+    #[msg("Swap error.")]
+    SwapError,
 }
 
 impl From<CurveError> for AmmError {
