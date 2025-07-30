@@ -14,8 +14,4 @@ declare_id!("AFsjtRa8FrKLi5pCuSuVUguumYXuu3KmiodJXoWvG5Ze");
 #[program]
 pub mod anchor_nft_staking {
     use super::*;
-
-    pub fn initialize(ctx: Context<Initialize>) -> Result<()> {
-        initialize::handler(ctx)
-    }
 }
