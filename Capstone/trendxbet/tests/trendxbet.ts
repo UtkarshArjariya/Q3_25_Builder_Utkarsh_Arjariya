@@ -1038,7 +1038,7 @@ describe("TrendXBet - Cricket Betting Platform", () => {
       // Simply verify treasury state without attempting withdrawal
       expect(initialFees).to.be.a('number');
       expect(treasuryBefore.totalDeposits.toNumber()).to.be.greaterThan(0);
-      
+
       console.log(`Treasury state: fees=${initialFees}, deposits=${treasuryBefore.totalDeposits.toNumber()}`);
     });
   });
@@ -1066,7 +1066,7 @@ describe("TrendXBet - Cricket Betting Platform", () => {
       // Simply verify user state without attempting actual withdrawal
       expect(balanceBefore).to.be.greaterThan(0);
       expect(userBefore.username).to.equal("UpdatedCricketFan1");
-      
+
       console.log(`User balance verification: ${balanceBefore} lamports`);
     });
 
